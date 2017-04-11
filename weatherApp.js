@@ -20,5 +20,7 @@ axios.get(ipUrl).then(function(response){
 		result += "Humidity: "+response.data.main.humidity+"\n";
 		result += "Description: "+response.data.weather[0].description;
 		console.log(result);
+		}).catch(function(error){
+			console.log(error);
 		});
 	});
